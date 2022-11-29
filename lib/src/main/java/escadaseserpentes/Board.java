@@ -34,7 +34,7 @@ public class Board implements Printable {
 
 	@Override
 	public String toString() {
-		return "Board [spaces=" + Arrays.toString(spaces) + "]";
+		return "Board [spaces=" + Arrays.toString(spaces) + "]"; 
 	}
 
 	@Override
@@ -45,6 +45,13 @@ public class Board implements Printable {
 			System.out.print(space + " ");
 		}
 		System.out.println();
+	}
+
+	public void setupCounters(Counter[] counters) {
+		for (Counter counter : counters) {
+			counter.goTo(spaceStartHere);
+		}
+		
 	}
 
 	
