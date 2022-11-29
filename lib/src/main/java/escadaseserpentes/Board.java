@@ -54,6 +54,11 @@ public class Board implements Printable {
 		
 	}
 
+	public void move(Counter counter, int diceNumber) {
+		
+		
+	}
+
 	
 	
 	
